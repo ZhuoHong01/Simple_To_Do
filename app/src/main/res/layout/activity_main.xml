@@ -7,13 +7,34 @@
     android:background="#73DDD9"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Task list"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider" />
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_height="48dp"
         android:entries="@array/spinnerItems"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider" />
 
     <EditText
         android:id="@+id/editTextTask"
@@ -27,19 +48,17 @@
         android:text="Enter a task"
         android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Task list"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Large" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
 
         <Button
             android:id="@+id/buttonAdd"
@@ -51,6 +70,13 @@
             app:backgroundTint="#149C10"
             tools:ignore="TextContrastCheck" />
 
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
         <Button
             android:id="@+id/buttonDelete"
             android:layout_width="wrap_content"
@@ -58,6 +84,13 @@
             android:layout_weight="1"
             android:text="Delete Task"
             app:backgroundTint="#AF1D1D" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
 
         <Button
             android:id="@+id/buttonClear"
@@ -68,7 +101,20 @@
             android:textColor="#84FFFF"
             app:backgroundTint="#D60707"
             tools:ignore="TextContrastCheck" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
 
     <ListView
         android:id="@+id/listViewTasks"
