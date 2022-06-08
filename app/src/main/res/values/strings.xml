@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Simple To Do</string>
     <string-array name="spinnerItems">
-        <item>Add</item>
-        <item>Delete</item>
+        <item>Add Tasks</item>
+        <item>Delete Tasks</item>
     </string-array>
 </resources>
