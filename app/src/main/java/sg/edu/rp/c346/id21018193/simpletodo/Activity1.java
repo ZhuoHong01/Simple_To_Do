@@ -13,36 +13,37 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class Activity1 extends AppCompatActivity {
 
-    EditText tasks;
-    TextView tvDelete;
-    Button btnAdd;
+    EditText taskDelete;
+    TextView tvAdd;
+    Button btnDelete;
     Button btnClear;
     ListView lvTasks;
-    ArrayList<String> alTasks;
+    ArrayList<Integer> alTasks;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_1);
 
-        tvDelete = findViewById(R.id.textViewDelete);
-        tasks = findViewById(R.id.editTextTask);
-        btnAdd = findViewById(R.id.buttonAdd);
+        tvAdd = findViewById(R.id.textViewAdd);
+        taskDelete = findViewById(R.id.editTextTaskDelete);
+        btnDelete = findViewById(R.id.buttonDelete);
         btnClear = findViewById(R.id.buttonClear);
         lvTasks = findViewById(R.id.listViewTasks);
-        alTasks = new ArrayList<>();
+        alTasks = new ArrayList<Integer>();
 
         ArrayAdapter aaTask = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, alTasks);
         lvTasks.setAdapter(aaTask);
 
-        btnAdd.setOnClickListener(new View.OnClickListener() {
+        btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String taskName = tasks.getText().toString();
-                alTasks.add(taskName);
+                String taskPosition = taskDelete.getText().toString();
+                alTasks.remove(taskPosition);
                 aaTask.notifyDataSetChanged();
             }
         });
@@ -55,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        tvDelete.setOnClickListener(new View.OnClickListener() {
+        tvAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Activity1.class);
+                Intent intent = new Intent(Activity1.this, MainActivity.class);
                 startActivity(intent);
             }
         });

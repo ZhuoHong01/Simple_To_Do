@@ -6,13 +6,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove a task" />
+
     <EditText
-        android:id="@+id/editTextTask"
+        android:id="@+id/editTextTaskDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter a task" />
+        android:minHeight="48dp"
+        android:text="Enter the index of task that is to be deleted" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,11 +27,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/buttonAdd"
+            android:id="@+id/buttonDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add Task" />
+            android:text="Delete Task" />
 
         <Button
             android:id="@+id/buttonClear"
@@ -35,10 +42,10 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textViewDelete"
+        android:id="@+id/textViewAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click here to delete tasks" />
+        android:text="Click here to add tasks" />
 
     <ListView
         android:id="@+id/listViewTasks"
