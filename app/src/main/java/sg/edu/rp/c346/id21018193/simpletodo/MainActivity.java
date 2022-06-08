@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
         spnTasks.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                switch(i){
-                    case 0:
+
+
                         if(spnTasks.getSelectedItem() == "Add Tasks"){
                             btnAdd.setOnClickListener(new View.OnClickListener() {
                                 @Override
@@ -72,9 +72,9 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             });
                         }
-                    break;
 
-                    case 1:
+
+
                         if(spnTasks.getSelectedItem() == "Add Tasks"){
                             btnAdd.setOnClickListener(new View.OnClickListener() {
                                 @Override
@@ -100,9 +100,9 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             });
                         }
-                    break;
+
                 }
-            }
+
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
