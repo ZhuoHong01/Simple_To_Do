@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             });
                         }
+                    break;
 
                     case 1:
                         if(spnTasks.getSelectedItem() == "Add Tasks"){
@@ -99,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             });
                         }
+                    break;
                 }
             }
 
