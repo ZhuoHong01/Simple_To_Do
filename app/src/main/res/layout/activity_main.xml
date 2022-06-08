@@ -53,9 +53,10 @@
         android:id="@+id/textViewDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="Click here to delete tasks"
         android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:textColor="#A34F4F" />
 
     <ListView
         android:id="@+id/listViewTasks"

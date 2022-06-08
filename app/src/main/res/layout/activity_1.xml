@@ -55,7 +55,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="Click here to add tasks"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#107E18" />
 
     <ListView
         android:id="@+id/listViewTasks"
