@@ -7,6 +7,12 @@
     android:background="#73DDD9"
     android:orientation="vertical">
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -20,13 +26,13 @@
         android:id="@+id/editTextTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
+        android:gravity="center_horizontal"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="Enter a task"
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:autofillHints="" />
+        android:textAlignment="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,18 +60,10 @@
             tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewDelete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Click here to delete tasks"
-        android:textAlignment="center"
-        android:textColor="#6D4C41" />
-
     <ListView
         android:id="@+id/listViewTasks"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#5180DC" />
+
 </LinearLayout>

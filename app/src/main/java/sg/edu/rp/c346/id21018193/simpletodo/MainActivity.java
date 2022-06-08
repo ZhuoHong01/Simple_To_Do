@@ -16,7 +16,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     EditText tasks;
-    TextView tvDelete;
     Button btnAdd;
     Button btnClear;
     ListView lvTasks;
@@ -27,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tvDelete = findViewById(R.id.textViewDelete);
         tasks = findViewById(R.id.editTextTask);
         btnAdd = findViewById(R.id.buttonAdd);
         btnClear = findViewById(R.id.buttonClear);
@@ -52,14 +50,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 alTasks.clear();
                 aaTask.notifyDataSetChanged();
-            }
-        });
-
-        tvDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Activity1.class);
-                startActivity(intent);
             }
         });
     }
