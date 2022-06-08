@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -42,9 +43,14 @@ public class Activity1 extends AppCompatActivity {
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String taskPosition = taskDelete.getText().toString();
-                alTasks.remove(taskPosition);
-                aaTask.notifyDataSetChanged();
+                if(alTasks.size() >= 1){
+                    String taskPosition = taskDelete.getText().toString();
+                    alTasks.remove(taskPosition);
+                    aaTask.notifyDataSetChanged();
+                }
+                else {
+                    Toast.makeText(Activity1.this, "There is no task to delete",Toast.LENGTH_SHORT);
+                }
             }
         });
 
