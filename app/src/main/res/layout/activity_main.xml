@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Task list"
+        android:text="@string/task_list"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Large" />
 
@@ -45,7 +45,7 @@
         android:gravity="center_horizontal"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Enter a task"
+        android:text="@string/enter_a_task"
         android:textAlignment="center" />
 
     <LinearLayout
@@ -65,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add Task"
+            android:text="@string/add_task"
             android:textColor="#000000"
             app:backgroundTint="#149C10"
             tools:ignore="TextContrastCheck" />
@@ -82,8 +82,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Delete Task"
-            app:backgroundTint="#AF1D1D" />
+            android:text="@string/delete_task"
+            app:backgroundTint="#AF1D1D"
+            tools:ignore="TextContrastCheck" />
 
         <View
             android:id="@+id/divider4"
@@ -97,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Clear all"
+            android:text="@string/clear_all"
             android:textColor="#84FFFF"
             app:backgroundTint="#D60707"
             tools:ignore="TextContrastCheck" />
