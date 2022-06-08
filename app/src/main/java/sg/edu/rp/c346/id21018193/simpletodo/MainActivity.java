@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                             btnDelete.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
-
+                                    Toast.makeText(MainActivity.this, "Button is disabled", Toast.LENGTH_SHORT).show();
                                 }
                             });
 
@@ -79,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                             btnAdd.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
-
+                                    Toast.makeText(MainActivity.this, "Button is disabled", Toast.LENGTH_SHORT).show();
                                 }
                             });
                             btnDelete.setOnClickListener(new View.OnClickListener() {
