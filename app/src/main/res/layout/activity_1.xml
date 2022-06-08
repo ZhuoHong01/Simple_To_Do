@@ -10,7 +10,10 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Remove a task" />
+        android:text="Remove a task"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/editTextTaskDelete"
