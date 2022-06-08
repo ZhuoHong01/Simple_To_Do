@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#73DDD9"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="Task list"
-        android:textAppearance="@android:style/TextAppearance.Large"
         android:textAlignment="center"
-        android:gravity="center_horizontal"/>
+        android:textAppearance="@android:style/TextAppearance.Large" />
 
     <EditText
         android:id="@+id/editTextTask"
@@ -21,7 +22,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter a task" />
+        android:minHeight="48dp"
+        android:text="Enter a task"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,21 +37,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add Task" />
+            android:text="Add Task"
+            app:backgroundTint="#149C10" />
 
         <Button
             android:id="@+id/buttonClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Clear all" />
+            android:text="Clear all"
+            app:backgroundTint="#D60707" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textViewDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click here to delete tasks" />
+        android:text="Click here to delete tasks"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
 
     <ListView
         android:id="@+id/listViewTasks"
